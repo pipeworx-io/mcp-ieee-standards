@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ieee-standards",
-  "version": "0.1.1",
-  "description": "IEEE Xplore MCP — BYOK wrapper over the IEEE Xplore Metadata Search API",
+  "version": "0.2.0",
+  "description": "IEEE Xplore MCP — BYOK wrapper over the IEEE Xplore Metadata Search API (https://ieeexploreapi.ieee.org/api/v1/search/articles).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ieee-standards": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ieee-standards"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ieee-standards.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ieee-standards",
   "pipeworx": {
-    "sourceHash": "v1-19fe651095fbb67e216a806d096b71bf111efdbcee1a8bae24f770ecbb00ceef",
-    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
+    "mode": "gateway",
+    "slug": "ieee-standards",
+    "gatewaySlug": "ieee-standards",
+    "sourceHash": "v1-8f6e81cff22fd13444e3e2de4a506610df16a3315427c3782651393db02bf4f6",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
