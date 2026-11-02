@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ieee-standards",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "IEEE Xplore MCP — BYOK wrapper over the IEEE Xplore Metadata Search API (https://ieeexploreapi.ieee.org/api/v1/search/articles).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ieee-standards",
     "gatewaySlug": "ieee-standards",
-    "sourceHash": "v1-8f6e81cff22fd13444e3e2de4a506610df16a3315427c3782651393db02bf4f6",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-d124ac252fa21f4c0ec46c537ee3e92ca0e2b04a7e25a4e508df69f4839273f5",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
